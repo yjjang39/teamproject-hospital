@@ -36,4 +36,6 @@ HTML, CSS, JAVASCRIPT를 처음 배우고 나서 진행한 첫 프로젝트입�
 
 ## 사이트 바로가기
 <https://yjjang39.github.io/teamproject-hospital/html/index.html>
-[기획서](https://yjjang39.github.io/teamproject-hospital/hospital_upload.pdf)
+
+
+[1차 프로젝트 기획서 보러가기](https://yjjang39.github.io/teamproject-hospital/hospital_upload.pdf)
