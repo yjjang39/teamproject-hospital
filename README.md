@@ -18,7 +18,7 @@ HTML, CSS, JAVASCRIPT를 처음 배우고 나서 진행한 첫 프로젝트입�
 * 팀장 장윤지 : Index(상단), GNB(건강정보, 병원안내), Util(로그인, 회원가입)
 * 김은비 : Index(하단), GNB(예약안내, 진료안내)
 
-### 🗜 개발 환경
+### ⚙ 개발 환경
 * Vscode
 * HTML
 * CSS
