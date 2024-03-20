@@ -1,0 +1,129 @@
+main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.hospitalinfo_side_menu {
+    width: 219px;
+    border-right: 1px solid #cbcbcb;
+}
+.hospitalinfo_side_menu h2 {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 50px 0 40px 20px;
+}
+.hospitalinfo_side_menu ul li {
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.eulji60 a {
+    padding: 15px 111px 15px 15px ;
+}
+.biography a {
+    padding: 15px 107px 15px 15px ;
+}
+.hospitalinfo a {
+    padding: 15px 130px 15px 15px ;
+}
+.hospitalmap a {
+    padding: 15px 89px 15px 15px ;
+}
+.customersay a {
+    padding: 15px 107px 15px 15px ;
+}
+.notice a {
+    padding: 15px 132px 15px 15px ;
+}
+.hospitalinfo {
+    background: #3586cf;
+    color: #fff;
+}
+.eulji60:hover, .biography:hover, .hospitalmap:hover, .customersay:hover, .notice:hover {
+    text-decoration: underline;
+}
+.hospital_info_wrap {
+    width: 900px;
+}
+.hospital_info_wrap h2 {
+    margin: 60px 0 10px;
+    font-size: 25px;
+}
+
+.info_title_wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info_title_wrap p{
+    margin: 60px 0 10px;
+    font-size: 18px;
+    color: #3586cf;
+}
+.info_title_wrap span {
+    display: block;
+    width: 1px;
+    height: 20px;
+    margin: 60px 0 10px;
+    background: #3686cf;
+}
+.ledger_wrap {
+    position: relative;
+    margin-bottom: 100px;
+}
+.ledger_wrap p {
+    width: 540px;
+    padding-top: 100px;
+    font-size: 35px;
+    color: #3686cf;
+    position: relative;
+    z-index: 1;
+}
+.ledger_wrap img {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 0;
+}
+.hospital_info_wrap > p {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    line-height: 1.8em;
+    font-size: 14px;
+}
+.p_first {
+    margin-bottom: 20px;
+}
+.p_second {
+    margin-bottom: 20px;
+}
+.p_third {
+    margin-bottom: 20px;
+}
+.p_forth {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 19px;
+}
+.p_forth b {
+    font-size: 22px;
+}
+
+.manager {
+    width: 900px;
+    background: url(../images/manager.png)no-repeat 17px/22px;
+    padding: 15px 0 15px 50px;
+    border: 1px solid #cbcbcb;
+    color: gray;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+
+
+
+.p_first b {
+    font-size: 17px;
+}

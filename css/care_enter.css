@@ -1,0 +1,204 @@
+.enter_life_main {
+  position: relative;
+  z-index: 1;
+}
+.enter_life_wrap {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+.enter_life_side_menu {
+  width: 219px;
+  border-right: 1px solid #cbcbcb;
+}
+.enter_life_side_menu h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 50px 0 40px 20px;
+}
+.enter_life_side_menu ul li {
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+.insurance_guide {
+  background: #3586cf;
+  color: #fff;
+}
+.care a {
+  padding: 15px 130px 15px 15px;
+}
+.specialty a {
+  padding: 15px 95px 15px 15px;
+}
+.insurance_guide a {
+  padding: 15px 130px 15px 15px;
+}
+.care:hover,
+.specialty:hover {
+  text-decoration: underline;
+}
+/*--*/
+.enter_total {
+  width: 900px;
+  padding: 0 0 70px 80px;
+  /* margin-top: 50px; */
+}
+.enter_title {
+  margin-bottom: 50px;
+}
+.enter_title h3 {
+  font-size: 25px;
+  margin-top: 60px;
+}
+/*--*/
+.care_tap_menu {
+  margin-bottom: 50px;
+}
+.care_tap_menu ul {
+  display: flex;
+  justify-content: center;
+}
+.care_tap_menu ul li {
+  width: 430px;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #aaa;
+}
+.care_tap_menu ul li:first-child {
+  color: #fff;
+  background: #3586cf;
+  border: 1px solid #3586cf;
+}
+
+
+.enter_life {
+  padding: 15px 169px;
+}
+.insurance_guide_insurance {
+  padding: 15px 184px;
+}
+
+
+
+/*--*/
+.enter_download h4,
+.enter_out h4,
+.enter_life_guide h4,
+.enter_time h4,
+.enter_limit h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.enter_order h5 {
+  font-size: 20px;
+  color: #3586cf;
+}
+.enter_download {
+  display: flex;
+  justify-content: space-between;
+}
+.download a {
+  border: 1px solid #1fc0b8;
+  background: #1fc0b8;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+/*--*/
+.enter_1 p,
+.enter_1 ul,
+.enter_2 p,
+.enter_2 ul {
+  font-size: 15px;
+  line-height: 25px;
+}
+.enter_1 ul li,
+.enter_2 ul li {
+  list-style: inside;
+}
+/*--*/
+.enter_1,
+.enter_2 {
+  display: flex;
+  margin-bottom: 100px;
+}
+.enter_1 img,
+.enter_2 img {
+  height: 530px;
+}
+.enter_1 h5 {
+  margin-bottom: 15px;
+}
+.enter_1_inner {
+  margin-left: 40px;
+}
+.enter_1_inner1 {
+  margin: 20px 0 130px;
+}
+.enter_1_inner2 {
+  margin-bottom: 100px;
+}
+.enter_2 h5 {
+  margin-bottom: 15px;
+}
+.enter_2_inner {
+  margin-left: 40px;
+}
+.enter_2_inner1 {
+  margin: 20px 0 140px;
+}
+.enter_2_inner2 {
+  margin-bottom: 90px;
+}
+/*--*/
+.enter_life_guide {
+  margin-bottom: 50px;
+}
+.enter_life_guide span {
+  margin-left: 15px;
+}
+.enter_life_guide p,
+.enter_life_guide span {
+  line-height: 25px;
+}
+/*--*/
+.enter_time {
+  margin-bottom: 50px;
+}
+.enter_time h4 {
+  color: #3586cf;
+  border-bottom: 3px solid #3586cf;
+  margin-bottom: 10px;
+}
+.enter_time p {
+  border-bottom: 1px solid #cbcbcb;
+}
+/*--*/
+.enter_limit {
+  margin-bottom: 50px;
+}
+.enter_limit h4 {
+  color: #3586cf;
+}
+.limit_list {
+  list-style: disc;
+  line-height: 25px;
+}
+.limit_list ul {
+  margin-bottom: 30px;
+}
+.limit_list ul li {
+  list-style: circle;
+  margin-left: 20px;
+}
+/*--*/
+.manager {
+  width: 900px;
+  background: url(../images/manager.png) no-repeat 17px/22px;
+  padding: 15px 0 15px 50px;
+  border: 1px solid #cbcbcb;
+  color: gray;
+  box-sizing: border-box;
+}

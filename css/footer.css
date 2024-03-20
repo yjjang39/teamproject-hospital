@@ -1,0 +1,130 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  background: #323c4d;
+  padding: 30px 10px;
+}
+/*--*/
+.footer_total {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer_menu {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer_menu a {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.policy {
+  color: #02a8ac;
+}
+
+.footer_sns img {
+  width: 50px;
+  margin-left: 20px;
+}
+/*--*/
+.footer_add_family {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  color: #cbcbcb;
+}
+.footer_sns_img_family {
+  display: flex;
+}
+.add {
+  font-size: 15px;
+  line-height: 25px;
+}
+.footer_sns img {
+  width: 40px;
+}
+.footer_img img {
+  width: 40px;
+  margin: 0 20px;
+}
+.footer_family {
+  position: relative;
+}
+.footer_family h2 {
+  font-size: 15px;
+  font-weight: normal;
+  /* padding: 10px;
+  box-sizing: border-box; */
+}
+.family_txt p {
+  padding-top: 6px;
+}
+.family_txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cbcbcb;
+  padding: 4px 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 190px;
+  cursor: pointer;
+}
+.family_cont {
+  /* width: 180px; */
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: black;
+  padding: 5px 0;
+
+  width: 188px;
+  display: block;
+  position: absolute;
+  bottom: 50px;
+
+  display: none;
+}
+.footer_family ul li {
+  line-height: 25px;
+  padding: 5px 10px ;
+  box-sizing: border-box;
+}
+.footer_family ul li a {
+  display: block;
+  width: 170px;
+}
+/* .footer_family:hover ul {
+  width: 178px;
+  display: block;
+  position: absolute;
+  bottom: 50px;
+} */
+.footer_family a:hover {
+  color: #02a8ac;
+}
+.footer_family ul li:last-child {
+  margin-bottom: 20px;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .footer_total {
+    align-items: center;
+  }
+  .footer_menu {
+    width: 430px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .footer_add_family {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .footer_sns {
+    margin-bottom: 20px;
+  }
+} */

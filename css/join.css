@@ -1,0 +1,138 @@
+main {
+    width: 1200px;
+    margin: 50px auto 50px;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+main h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+main p {
+    margin-bottom: 30px;
+}
+main h4 {
+    margin-bottom: 5px;
+}
+.terms_personal {
+    width: 1010px;
+    margin: 0 auto;
+}
+textarea {
+    width: 1000px;
+    height: 150px;
+    outline: none;
+    resize: none;
+}
+.agree_wrap1 {
+    width: 1000px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.agree_wrap2 {
+    width: 1000px;
+    text-align: right;
+    margin-bottom: 70px;
+}
+
+#u_info {
+    border-top: 2px solid #004b88;
+    border-bottom: 2px solid #004b88;
+    /* padding: 20px; */
+}
+#u_info label {
+    display: block;
+    width: 150px;
+}
+#u_info div {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#u_name {
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#u_id {
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#u_pwd{
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#u_re_pwd{
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#u_tel_first {
+    width: 100px;
+    background: #eee;
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid #aaa;
+}
+#u_tel_second, #u_tel_last {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#u_email{
+    width: 450px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.u_id_wrap button {
+    background: #004b88;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 8px;
+}
+.u_tel_wrap span {
+    margin: 0 6px;
+}
+.personal_info_wrap {
+    margin-bottom: 50px;
+}
+.join_btn_wrap {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.join {
+    border: 1px solid #cbcbcb;
+    color: #000;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.cancel {
+    border: 1px solid #cbcbcb;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.join_btn_active {
+    border: 1px solid #3586cf;
+    background: #3586cf;
+    color: #fff;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-size: 15px;
+}

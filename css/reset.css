@@ -1,0 +1,64 @@
+body, header, main, footer, h1, h2, h3, h4, h5, address, p, div, nav, form, fieldset, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    vertical-align: bottom;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
+fieldset, img {
+    border: none;
+}
+img {
+    vertical-align: bottom;
+}
+input, button {
+    vertical-align: bottom;
+}
+input {
+    outline: none;
+    border: 1px solid #000;
+}
+.hide {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: -1px;
+    text-indent: -9999px;
+    border: none;
+}
+.skip_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+.skip_menu a {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: -50px;
+}
+.skip_menu a:focus, .skip_menu a:hover {
+    top: 0;
+}
+
+body {
+    font-family: '맑은 고딕', '돋움', '굴림';
+    font-size: 15px;
+}

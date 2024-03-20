@@ -1,0 +1,99 @@
+.login_main {
+  position: relative;
+  z-index: 1;
+}
+.login_wrap {
+  width: 1200px;
+  margin: 50px auto 50px;
+}
+.login_title h2 {
+  font-size: 30px;
+}
+.login_inner h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #3686cf;
+}
+.login_title p {
+  margin-bottom: 40px;
+}
+.login_inner p {
+  margin-bottom: 80px;
+}
+.login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  border-top: 2px solid #004b88;
+  border-bottom: 2px solid #004b88;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.login_content h3 {
+  font-size: 33px;
+  color: #004b88;
+  width: 140px;
+  height: 50px;
+  background: url(../images/login.png)no-repeat 0 0/50px;
+  padding-left: 60px;
+  padding-top: 14px;
+  margin-left: 10px;
+  margin-bottom: -3px;
+}
+label {
+  display: block;
+  width: 80px;
+}
+.login_id_wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login_pwd_wrap {
+  display: flex;
+  align-items: center;
+}
+.login_form form input {
+  width: 300px;
+  border: 1px solid #cbcbcb;
+  border-radius: 5px;
+  height: 25px;
+}
+.login_btn {
+  background: #004b88;
+  color: #fff;
+  padding: 33px;
+}
+
+.find_id {
+  width: 90px;
+  height: 150px;
+  background: url(../images/find_id.png)no-repeat 15px 35px/60px;
+  padding-top: 70px;
+}
+.find_pwd {
+  width:110px;
+  height: 150px;
+  background: url(../images/password_icon.png)no-repeat 27px 35px/62px;
+  padding-top: 70px;
+}
+.join {
+  width: 110px;
+  height: 150px;
+  background: url(../images/join.png)no-repeat 25px 35px/62px;
+  padding-top: 70px;
+}
+.find_btn_wrap {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.find_btn_wrap span {
+  width: 1px;
+  height: 100px;
+  background: #888888;
+}

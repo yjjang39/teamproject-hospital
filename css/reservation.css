@@ -1,0 +1,117 @@
+.reservation_main {
+  position: relative;
+  z-index: 1;
+}
+.reservation_wrap {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+.reservation_side_menu {
+  width: 219px;
+  border-right: 1px solid #cbcbcb;
+}
+.reservation_side_menu h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 50px 0 40px 20px;
+}
+.reservation_side_menu ul li {
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+.guide {
+  background: #3586cf;
+  color: #fff;
+}
+.guide a {
+  padding: 15px 130px 15px 15px;
+}
+.visit a {
+  padding: 15px 28px 15px 15px;
+}
+.faq a {
+  padding: 15px 80px 15px 15px;
+}
+.visit:hover,
+.faq:hover {
+  text-decoration: underline;
+}
+/*--*/
+.reservation_guide {
+  width: 900px;
+  padding: 0 0 70px 80px;
+}
+.guide_title {
+  margin-bottom: 30px;
+}
+.guide_title h3 {
+  font-size: 25px;
+  margin: 60px 0 10px;
+}
+.guide_title p {
+  font-size: 14px;
+}
+.guide_01,
+.guide_02,
+.guide_03 {
+  display: flex;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px dotted #cbcbcb;
+}
+.guide_04 {
+  display: flex;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.guide_01 img,
+.guide_02 img,
+.guide_03 img,
+.guide_04 img {
+  width: 140px;
+  height: 140px;
+  margin-right: 30px;
+}
+.guide_inner_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.guide_inner_txt p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.guide_inner_txt a {
+  display: block;
+  width: 200px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  padding: 6px 10px;
+}
+.first_btn {
+  background: #007cbc;
+}
+.txt_color {
+  color: #007cbc;
+}
+.s_btn {
+  background: #3e8dd6;
+}
+.t_btn {
+  background: #1dc5bb;
+}
+.fourth_btn {
+  background: #e57418;
+}
+/*--*/
+.manager {
+  width: 900px;
+  background: url(../images/manager.png) no-repeat 17px/22px;
+  padding: 15px 0 15px 50px;
+  border: 1px solid #cbcbcb;
+  color: gray;
+  box-sizing: border-box;
+}

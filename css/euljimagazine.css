@@ -1,0 +1,149 @@
+main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.euljimagazine_side_menu {
+    width: 219px;
+    border-right: 1px solid #cbcbcb;
+}
+.euljimagazine_side_menu h2 {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 50px 0px 40px 20px;
+}
+.euljimagazine_side_menu ul li {
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.medicalessay a {
+    padding: 15px 95px 15px 15px ;
+}
+.euljimagazine a {
+    padding: 15px 130px 15px 15px ;
+}
+.ereplit a {
+    padding: 15px 132px 15px 15px ;
+}
+.euljimagazine {
+    background: #3586cf;
+    color: #fff;
+}
+.medicalessay:hover, .ereplit:hover {
+    text-decoration: underline;
+}
+.medical_essay_wrap {
+    width: 900px;
+}
+.medical_essay_wrap h2 {
+    margin: 60px 0 10px;
+    font-size: 25px;
+}
+.medical_essay_wrap p {
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-top: 2px solid #004b88;
+    border-bottom: 1px solid #cbcbcb;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+tr, td {
+    border-bottom: 1px solid #cbcbcb;
+}
+th {
+    padding: 13px;
+    background: #f5f5f5;
+}
+td {
+    padding: 11px;
+}
+tbody tr td:nth-child(2) {
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* thead tr th:first-child {
+    display: flex;
+    align-items: center;
+} */
+/* thead tr th:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #cbcbcb;
+    
+} */
+/* thead tr th:nth-child(2)::after
+thead tr th:nth-child(3)::after */
+
+.medical_essay_nums ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.nums_active {
+    color: #004b88;
+    text-decoration: underline;
+}
+#medical_essay_search {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+#medical_essay_search fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medical_essay_search_btn {
+    border: 1px solid #004b88;
+    color: #fff;
+    background: #004b88;
+    width: 50px;
+    height: 22px;
+}
+select {
+    width: 90px;
+    height: 22px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+#medical_essay_txt {
+    width: 300px;
+    height: 22px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+.manager {
+    width: 900px;
+    background: url(../images/manager.png)no-repeat 17px/22px;
+    padding: 15px 0 15px 50px;
+    border: 1px solid #cbcbcb;
+    color: gray;
+    box-sizing: border-box;
+    margin-bottom: 70px !important
+}
+
+
+
+table tbody tr td:nth-child(2):hover {
+    text-decoration: underline;
+}
+table tbody tr td:nth-child(2) {
+    cursor: pointer;
+}

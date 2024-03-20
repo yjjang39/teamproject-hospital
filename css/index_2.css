@@ -1,0 +1,487 @@
+.main {
+  position: relative;
+  z-index: 1;
+}
+/*--*/
+.notice {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.notice_title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.notice_title h2 {
+  margin-bottom: 10px;
+}
+.notice_inner {
+  margin: 0 10px;
+}
+.notice_first {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.notice_first::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 1px;
+  background-color: #12b8ba;
+}
+.tab_item1,
+.tab_item2,
+.tab_item3,
+.tab_item4 {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #cbcbcb;
+  /* border-left: none; */
+}
+.notice_first li a {
+  display: block;
+  padding: 15px 80px;
+  /* border: 1px solid #cbcbcb; */
+}
+.tab_active {
+  border: 1px solid #00a9ac;
+  background: #00a9ac;
+  color: white;
+  font-weight: bold;
+}
+.eulji_news ul,
+.eulji_qna ul,
+.eulji_employment ul,
+.eulji_bid ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.eulji_news ul li,
+.eulji_qna ul li,
+.eulji_employment ul li,
+.eulji_bid ul li {
+  width: 326px;
+  height: 140px;
+  border: 1px solid #cbcbcb;
+  padding: 30px;
+}
+.eulji_qna,
+.eulji_employment,
+.eulji_bid {
+  display: none;
+}
+/*-*/
+.eulji_news ul li:hover,
+.eulji_qna ul li:hover,
+.eulji_employment ul li:hover,
+.eulji_bid ul li:hover {
+  border: 2px solid #00a9ac;
+  padding: 29px;
+}
+.eulji_news ul li a,
+.eulji_qna ul li a,
+.eulji_employment ul li a,
+.eulji_bid ul li a {
+  display: flex;
+  flex-direction: column;
+}
+.eulji_news ul li a span,
+.eulji_qna ul li a span,
+.eulji_employment ul li a span,
+.eulji_bid ul li a span {
+  display: block;
+}
+.eulji_news ul li a .date,
+.eulji_qna ul li a .date,
+.eulji_employment ul li a .date,
+.eulji_bid ul li a .date {
+  font-size: 15px;
+  color: #00a9ac;
+  padding: 10px 0;
+}
+.eulji_news ul li a .title,
+.eulji_employment ul li a .title {
+  font-size: 20px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.eulji_qna ul li a .title,
+.eulji_bid ul li a .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.eulji_news ul li a .txt,
+.eulji_qna ul li a .txt,
+.eulji_employment ul li a .txt,
+.eulji_bid ul li a .txt {
+  height: 57px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: clip;
+  line-height: 20px;
+}
+.eulji_employment .deadline {
+  color: #00a9ac;
+}
+/*--*/
+.doctor_bg {
+  background: #d4ecf8;
+  position: relative;
+}
+.doctor {
+  display: flex;
+  padding-top: 30px;
+  overflow: hidden;
+  width: 700px;
+  margin: auto;
+}
+.doctor ul {
+  display: flex;
+}
+.doctor ul li {
+  width: 700px;
+}
+.doctor_img_name1,
+.doctor_img_name2,
+.doctor_img_name3,
+.doctor_img_name4,
+.doctor_img_name5 {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+/*--*/
+.arrow button {
+  position: absolute;
+}
+.big_left {
+  top: 165px;
+  left: 100px;
+}
+.big_left img,
+.big_right img {
+  width: 50px;
+}
+.big_right {
+  top: 165px;
+  right: 100px;
+}
+.doctor_img_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: auto;
+}
+.doctor_img_name span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.doctor_inner {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+}
+.doctor_inner_title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 30px 0 30px;
+}
+.doctor_inner_txt {
+  margin-bottom: 5px;
+}
+.doctor_inner_name {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.doctor_inner a {
+  margin-top: 60px;
+  text-align: end;
+  padding: 10px;
+  text-decoration: underline;
+}
+.doctor_inner a:hover {
+  font-weight: bold;
+}
+/*--*/
+.e_ad_bg {
+  background: #eee;
+  padding: 50px 0;
+  margin-bottom: 80px;
+}
+.e_ad {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.e_ad_title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.e_ad_title h2 {
+  margin-bottom: 10px;
+}
+.e_ad_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.e_leaflet {
+  position: relative;
+  border: 1px solid #cbcbcb;
+  border-top: 2px solid #00a9ac;
+  padding: 20px 30px;
+  background: #fff;
+  height: 250px;
+  width: 500px;
+}
+.e_leaflet_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.e_leaflet_title img {
+  width: 30px;
+  height: 30px;
+}
+.e_leaflet_inner {
+  width: 500px;
+  overflow: hidden;
+}
+.e_leaflet_inner ul {
+  position: relative;
+  display: flex;
+  width: 1500px;
+}
+.e_leaflet_inner ul li {
+  display: flex;
+  width: 500px;
+  /* overflow: hidden; */
+}
+.health > div,
+.health_02 > div,
+.health_03 > div {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.health_01 a img,
+.health_02 a img,
+.health_03 a img {
+  width: 130px;
+}
+.e_leaflet_inner_txt {
+  display: flex;
+  flex-direction: column;
+}
+.e_leaflet_inner_txt strong {
+  margin-bottom: 10px;
+}
+.e_leaflet_inner_txt span {
+  display: block;
+  height: 180px;
+  width: 250px;
+  overflow: hidden;
+  line-height: 20px;
+}
+/* .health_02,
+.health_03 {
+  display: none;
+} */
+.e_arrow button {
+  position: absolute;
+}
+.s_left img {
+  width: 30px;
+}
+.s_left {
+  top: 140px;
+  left: 20px;
+}
+.s_right img {
+  width: 30px;
+}
+.s_right {
+  top: 140px;
+  right: 20px;
+}
+/*--*/
+.ad {
+  position: relative;
+}
+.ad_inner {
+  width: 580px;
+  overflow: hidden;
+}
+.ad_inner ul {
+  width: 2900px;
+  display: flex;
+  position: relative;
+}
+.ad_inner ul li {
+  overflow: hidden;
+}
+.ad_inner img {
+  width: 580px;
+  height: 290px;
+}
+.ad_btn {
+  position: absolute;
+  right: -30px;
+  top: 80px;
+}
+.ad_btn ul li {
+  margin-bottom: 10px;
+}
+.ad_btn ul li button img {
+  width: 15px;
+}
+/*--*/
+.map {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+.map_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.map_title h2 {
+  margin-bottom: 10px;
+}
+.map_icon ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.map_icon a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+.map_icon img {
+  width: 80px;
+  padding: 30px;
+}
+.road_box,
+.car_box,
+.building_box {
+  border: 3px solid #4d89c0;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.icon_img_road:hover .road_box img,
+.icon_img_car:hover .car_box img,
+.icon_img_buildig:hover .building_box img {
+  display: none;
+}
+.icon_img_road:hover .road_box {
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  background: #4d89c0 url(../images/road.png) no-repeat center/80px;
+}
+.icon_img_car:hover .car_box {
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  background: #4d89c0 url(../images/car.png) no-repeat center/80px;
+}
+.icon_img_buildig:hover .building_box {
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  background: #4d89c0 url(../images/building.png) no-repeat center/80px;
+}
+
+/*--*/
+@media screen and (max-width: 1200px) {
+  .notice_first li a {
+    padding: 15px 50px;
+  }
+  .eulji_news ul li,
+  .eulji_qna ul li,
+  .eulji_employment ul li,
+  .eulji_bid ul li {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 1166px) {
+  .notice_first li a {
+    padding: 15px 50px;
+  }
+  .eulji_news ul li,
+  .eulji_qna ul li,
+  .eulji_employment ul li,
+  .eulji_bid ul li {
+    width: 43%;
+  }
+  .e_ad_inner {
+    flex-direction: column;
+    margin: auto;
+  }
+  .e_leaflet {
+    width: 520px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .eulji_news ul li,
+  .eulji_qna ul li,
+  .eulji_employment ul li,
+  .eulji_bid ul li {
+    width: 42%;
+  }
+  .arrow {
+    display: none;
+  }
+  .doctor_dot {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 874px) {
+  .eulji_news ul li,
+  .eulji_qna ul li,
+  .eulji_employment ul li,
+  .eulji_bid ul li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .notice_first li a {
+    padding: 15px 10px;
+  }
+  .doctor_img_name1,
+  .doctor_img_name2,
+  .doctor_img_name3,
+  .doctor_img_name4,
+  .doctor_img_name5 {
+    display: block;
+    text-align: center;
+  }
+  .doctor_inner {
+    margin: auto;
+  }
+  .doctor_inner a {
+    text-align: center;
+    margin-top: 0;
+  }
+}

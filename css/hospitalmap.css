@@ -1,0 +1,134 @@
+main {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.customersay_side_menu {
+    width: 219px;
+    border-right: 1px solid #cbcbcb;
+}
+.customersay_side_menu h2 {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    padding: 50px 0 40px 20px;
+}
+.customersay_side_menu ul li {
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.eulji60 a {
+    padding: 15px 111px 15px 15px ;
+}
+.biography a {
+    padding: 15px 107px 15px 15px ;
+}
+.hospitalinfo a {
+    padding: 15px 130px 15px 15px ;
+}
+.hospitalmap a {
+    padding: 15px 89px 15px 15px ;
+}
+.customersay a {
+    padding: 15px 107px 15px 15px ;
+}
+.notice a {
+    padding: 15px 132px 15px 15px ;
+}
+.hospitalmap {
+    background: #3586cf;
+    color: #fff;
+}
+.eulji60:hover, .biography:hover, .customersay:hover, .hospitalinfo:hover, .notice:hover {
+    text-decoration: underline;
+}
+.customersay_wrap {
+    width: 900px;
+}
+.customersay_wrap h2 {
+    margin: 60px 0 20px;
+    font-size: 25px;
+}
+.customersay_wrap > p {
+    margin-top: 5px;
+    text-align: right;
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+.customersay_wrap h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.subway {
+    margin-bottom: 40px;
+}
+.bus {
+    margin-bottom: 40px;
+}
+.car {
+    margin-bottom: 40px;
+}
+.subway h3 {
+    width: 150px;
+    height: 26px;
+    background: url(../images/subway.png)no-repeat 0px 0px/27px 25px;
+    padding-left: 33px;
+    padding-top: 3px;
+}
+.bus h3 {
+    width: 150px;
+    height: 26px;
+    background: url(../images/bus.png)no-repeat 3px 0px/24px 25px;
+    padding-left: 33px;
+}
+.car h3 {
+    width: 150px;
+    height: 26px;
+    background: url(../images/car_map.png)no-repeat 3px 2px/27px 25px;
+    padding-left: 33px;
+    padding-top: 4px;
+}
+.parking h3 {
+    width: 150px;
+    height: 26px;
+    background: url(../images/parking.png)no-repeat 2px 3px/31px 30px;
+    padding-left: 33px;
+    padding-top: 5px;
+}
+.customersay_wrap li {
+    list-style: disc;
+    margin-left: 30px;
+}
+.car a {
+    border: 1px solid #cbcbcb;
+    display: block;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color: gray;
+}
+.parking {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+.manager {
+    width: 900px;
+    background: url(../images/manager.png)no-repeat 17px/22px;
+    padding: 15px 0 15px 50px;
+    border: 1px solid #cbcbcb;
+    color: gray;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,118 @@
+.insurance_guide_main {
+  position: relative;
+  z-index: 1;
+}
+.insurance_guide_wrap {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+.insurance_guide_side_menu {
+  width: 219px;
+  border-right: 1px solid #cbcbcb;
+}
+.insurance_guide_side_menu h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 50px 0 40px 20px;
+}
+.insurance_guide_side_menu ul li {
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+.insurance_guide {
+  background: #3586cf;
+  color: #fff;
+}
+.care a {
+  padding: 15px 130px 15px 15px;
+}
+.specialty a {
+  padding: 15px 95px 15px 15px;
+}
+.insurance_guide a {
+  padding: 15px 130px 15px 15px;
+}
+.care:hover,
+.specialty:hover {
+  text-decoration: underline;
+}
+/*--*/
+.care_tap_menu {
+  margin-bottom: 50px;
+}
+.care_tap_menu ul {
+  display: flex;
+  justify-content: center;
+}
+.care_tap_menu ul li {
+  width: 430px;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #aaa;
+}
+.care_tap_menu ul li:last-child {
+  color: #fff;
+  background: #3586cf;
+  border: 1px solid #3586cf;
+}
+/*--*/
+.insurance_total {
+  width: 900px;
+  padding: 0 0 70px 80px;
+  /* margin-top: 50px; */
+}
+.insurance_guide_title {
+  margin-bottom: 50px;
+}
+.insurance_guide_title h3 {
+  font-size: 25px;
+  margin-top: 60px;
+}
+/*--*/
+.insurance_1,
+.insurance_2,
+.insurance_3,
+.insurance_4 {
+  margin-bottom: 30px;
+}
+.insurance_1 h3,
+.insurance_2 h3,
+.insurance_3 h3,
+.insurance_4 h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.insurance_1 p,
+.insurance_2 p,
+.insurance_3 p,
+.insurance_4 p {
+  font-size: 13px;
+  line-height: 20px;
+}
+.insurance_1 p span,
+.insurance_2 p span,
+.insurance_3 p span,
+.insurance_4 p span {
+  margin-left: 15px;
+}
+
+.enter_life {
+  padding: 15px 169px;
+}
+.insurance_guide_insurance {
+  padding: 15px 184px;
+}
+
+
+/*--*/
+.manager {
+  width: 900px;
+  background: url(../images/manager.png) no-repeat 17px/22px;
+  padding: 15px 0 15px 50px;
+  border: 1px solid #cbcbcb;
+  color: gray;
+  box-sizing: border-box;
+}
