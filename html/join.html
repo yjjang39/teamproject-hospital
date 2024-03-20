@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/footer.css">
+  <link rel="stylesheet" type="text/css" href="../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../css/join.css">
+
+  <link rel="icon" href="../images/eulji_ai_favicon.png"/>
+  <link rel="apple-touch-icon" href="../images/eulji_ai_favicon.png"/> 
+  
+  
+  <script type="text/javascript" src="../js/join.js"></script>
+  
+</head>
+<body>
+  <header id="header">
+    <div class="nav_bg"></div>
+    <div class="border_line"></div>
+    <div class="header_wrap">
+        <h1 class="logo">
+            <a href="index.html"><img src="../images/eulji_ai.png" alt="노원을지대학교병원"></a>
+        </h1>
+        
+        <nav class="gnb" id="gnb">
+            <h2 class="hide">주메뉴</h2>
+            <ul>
+                <li><a href="reservation.html">예약안내</a>
+                    <ul class="two_depth">
+                        <li><a href="reservation.html">예약안내</a></li>
+                        <li><a href="visit.html">첫 방문고객 진료예약</a></li>
+                        <li><a href="faq.html">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="care.html">진료안내</a>
+                    <ul class="two_depth">
+                        <li><a href="care.html">진료과</a></li>
+                        <li><a href="care_specialty.html">전문진료센터</a></li>
+                        <li><a href="care_enter.html">진료안내</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="medicalessay.html">건강정보</a>
+                    <ul class="two_depth">
+                        <li><a href="medicalessay.html">메디컬 에세이</a></li>
+                        <li><a href="euljimagazine.html">을지소식</a></li>
+                        <li><a href="ereplit.html">E-리플릿</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="hospitalinfo.html">병원안내</a>
+                    <ul class="two_depth">
+                        <li><a href="https://www.emc.ac.kr/epub/index.html">을지60년사</a></li>
+                        <li><a href="https://www.eulji.or.kr/ePub/index.html">설립자 평전</a></li>
+                        <li><a href="hospitalinfo.html">병원소개</a></li>
+                        <li><a href="hospitalmap.html">찾아오시는 길</a></li>
+                        <li><a href="customersay.html">고객의 소리</a></li>
+                        <li><a href="recruitment.html">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="top_menu">
+        <h2 class="hide">서비스메뉴</h2>
+        <div class="center">
+            <ul>
+                <li><a href="https://health.eulji.or.kr/"  target="_blank">건강증진센터</a></li>
+                <li><a href="https://refer.eulji.or.kr/" target="_blank">진료협력센터</a></li>
+            </ul>
+        </div>
+
+        <div class="util_wrap">
+            <div class="util_menu">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                    <li class="language">
+                        <a href="#none">LANGUAGE</a>
+                        <ul class="lang_bg">
+                            <li><a href="#none">ENGLISH</a></li>
+                            <li><a href="#none">中國語</a></li>
+                            <li><a href="#none">日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form name="search_box" id="search_box">
+                    <fieldset>
+                        <legend class="hide">검색하기</legend>
+                        <label for="search_txt" class="hide">검색</label>
+                        <input type="text" name="search_txt" id="search_txt" placeholder="검색어를 입력하세요.">
+                    </fieldset>
+                </form>
+                <button type="submit" class="search_btn">검색</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button type="button"><img src="../images/menu.png" alt="mobile_menu"></button> -->
+</header>
+
+
+    <main id="main">
+        <h2>회원가입</h2>
+
+        <div class="terms_personal_wrap">
+          <h3>약관동의</h3>
+          <p>회원가입을 위해 아래 이용약관과 개인정보의 수집 및 수집방법을 반드시 읽으신 후 동의 여부를 선택해 주십시오.</p>
+
+          <div class="terms_personal">
+            <h4>을지대학교 을지병원 이용약관</h4>
+            <form name="terms" id="terms">
+              <fieldset>
+                <legend class="hide">이용약관</legend>
+                <textarea name="terms_txt" id="terms_txt" readonly>제1장 총칙
+                  제1조 [목적]
+                  본 약관은 을지대학교 을지병원(이하 "병원")에서 운영하는 인터넷 홈페이지에서 제공하는 인터넷 관련 서비스(이하 "서비스")의 이용에 관한 사항을 규정함을 목적으로 합니다.
+                  
+                  제2조 [약관의 효력과 변경]
+                  1. 이 약관은 이용자에게 공시함으로서 효력이 발생합니다.
+                  2. 병원은 사정 변경의 경우와 업무상 중요 사유가 있을 때 약관을 변경할 수 있으며, 변경된 약관은 전항과 같은 방법으로 효력이 발생합니다.
+                  제3조 [약관 외 준칙]
+                  이 약관에 명시되지 않은 사항이 관계 법령에 규정되어 있을 경우에는 그 규정에 따릅니다.
+                  
+                  제2장 정의
+                  1. <이용자>란 서비스에 접속하여 본 약관에 따라 병원이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+                  2. <회원>이란 병원이 회원으로 적합하다고 인정하는 일반 개인으로 본 약 관에 동의하며 서비스의 회원가입양식을 작성하고 아이디와 비밀번호로서 서비스를 이용할 수 있는 사람을 말합니다.
+                  제3장 회원의 가입 및 탈퇴
+                  제1조 [회원가입]
+                  1. 이용자는 병원의 정한 양식에 따라 회원정보를 기입한 후 본 약관 내용에 대한 동의를 함으로서 회원가입이 성립됩니다.
+                  2. 병원은 전항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각 호에 해당 하는 가입신청에 대해서는 승낙하지 않습니다.
+                  가. 등록내용에 허위, 기재누락, 오기가 있는 경우
+                  나. 다른 사람의 명의를 사용하여 신청한 경우
+                  다. 기타 회원으로 등록하는 것이 병원의 기술상 또는 업무 수행상 현저히 지장이 있다고 판단하는 경우
+                  3. 회원가입계약의 성립시기는 병원이 승낙한 시점으로 합니다.
+                  제2조 [회원탈퇴 및 자격의 상실]
+                  1. 병원은 이용자가 다음 사항에 해당하는 행위를 하였을 경우 사전 통지 없이 이용 계약을 해지 하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.
+                  가. 회원 등록시 허위 내용을 등록한 경우
+                  나. 범죄적 행위에 관련되는 경우
+                  다. 이용자가 국익 또는 사회적 공익을 저해할 목적으로 서비스 이용을 계획 또는 실행 할 경우
+                  라. 타인의 서비스 아이디 및 비밀 번호를 도용한 경우
+                  마. 타인의 명예를 손상시키거나 불이익을 주는 경우
+                  바. 같은 사용자가 다른 아이디로 이중 등록을 한 경우
+                  사. 서비스에 위해를 가하는 등 서비스의 건전한 이용을 저해하는 경우
+                  아. 관련법령이나 병원이 정한 이용조건에 위배되는 경우
+                  자. 기타 회원으로서의 자격을 지속시키는 것이 부적절 하다고 판단되는 경우
+                  2. 회원이 서비스의 탈퇴를 원할 경우 병원은 즉시 회원탈퇴를 처리 합니다.
+                  탈퇴요청은 전자메일이나 서면으로 가능하며 이름, 아이디, 비밀번호, 해지사유를 기재하여야 합니다.
+                  제4장 서비스에 관한 책임 및 제한
+                  제1조 [상담서비스]
+                  1. 상담에 대한 답변 내용은 각 전문 의사의 의학적 지식을 바탕으로 한 주관적인 답변으로 병원의 서비스의 의견을 대표하지 않습니다.
+                  2. 상담에 대한 답변 내용으로 인하여 회원이 입게 되는 어떠한 손해도 병원이 책임지지 않습니다.
+                  3. 아래와 같은 내용의 상담을 신청하는 경우에는 상담 서비스를 전체 또는 일부 제공하지 않을 수 있으며, 해당 게시물을 서비스관리자가 임의 로 삭제할 수 있습니다.
+                  가. 같은 내용의 상담을 중복하여 신청하는 경우
+                  나. 상식에 어긋나는 표현을 사용하여 상담을 신청하는 경우
+                  다. 상담의 내용이 답변을 하기에 충분치 못한 경우
+                  라. 진단명을 요구하는 상담을 신청하는 경우
+                  마. 치료비, 검사비, 의약품 가격 등에 대한 상담을 신청하는 경우
+                  4. 상담에 대한 답변을 담당하는 의사의 개인사정에 따라 답변이 늦어지거나 불가능 할 수도 있습니다.
+                  5. 상담내용은 개인신상정보를 삭제한 다음 아래와 같은 목적으로 이용될 수 있습니다.
+                  가. 학술 활동
+                  나. FAQ등 서비스 내용의 일부
+                  제2조 [건강검진예약서비스]
+                  1. 병원을 통하여 건강검진예약을 한 후 정당한 사유 없이 2회 이상 진료 예약을 포기하거나 예약한 진료를 받지 않은 경우 진료예약에 대한 자격을 상실 합니다.
+                  제3조 [정보 서비스]
+                  1. 서비스에서 제공되는 내용은 개략적이며 일반적인 내용의 정보들이며 참고로만 활용될 수 있으며 의견을 받아들이는 것은 전적으로 사용자의 판단에 따르는 것입니다. 또한 서비스에서 제공되는 정보나 상담은 의학적인 진단을 대신할 수없으며 병원에서는 본 정보로부터 비롯된 사용자의 어떠한 손해, 상해, 그 밖의 불이익에 대한 책임을 지지 않습니다.
+                  2. 병원은 서비스 내용의 변경으로 인하여 발생될 수 있는 이용자가 입은 손해에 대하여 배상하지 아니합니다.
+                  제4조 [이용자의 게시물]
+                  1. 병원은 이용자가 게시하거나 등록하는 서비스 내의 내용물이 다음 각 사항에 해당된다고 판단되는 경우에 사전 통지 없이 삭제할 수 있습니다.
+                  가. 다른 이용자 또는 제 3자를 비방하거나 중상 모략으로 명예를 손상시키는 내용인 경우
+                  나. 공공질서 및 미풍 양속에 위반되는 내용인 경우
+                  다. 범죄적 행위에 결부된다고 인정되는 내용일 경우
+                  라. 제 3자의 저작권 등 기타 권리를 침해하는 내용인 경우
+                  마. 기타 관계 법령이나 병원에서 정한 규정에 위배되는 경우
+                  제5장 의무
+                  제1조 [병원의 의무]
+                  1. 병원은 특별한 사정이 없는 한 회원이 서비스를 이용할 수 있도록 합니다.
+                  2. 병원은 약관에서 정한 바에 따라 계속적, 안정적으로 서비스를 제공 할 의무가 있습니다.
+                  3. 병원은 이용자의 신용정보를 포함한 개인신상정보의 보안에 대하여 기술적 안전 조치를 강구하고 관리에 만전을 기함으로써 이용자의 정보보안에 최선을 다합니다.
+                  제2조 [이용자(회원)의 의무]
+                  1. 이용자(회원)는 이 약관 및 관계법령에서 규정한 사항을 준수하여야 합니다.
+                  2. 회원은 서비스의 일부로 보내지는 서비스의 전자우편을 받는 것에 동의합니다.
+                  3. 이용자는 자신의 개인정보에 대한 열람을 병원에 요구 할 수 있으며, 자신의 개인정보에 오류가 있을 경우에는 정정을 요구 할 수 있습니다.
+                  4. 이용자는 다음과 같은 행위를 하여서는 안됩니다.
+                  가. 신청 또는 변경시 허위 내용의 등록
+                  나. 병원이나 기타 제 3자의 저작권 등 지적 재산권에 대한 침해
+                  다. 상품을 판매하거나 알선 하는 행위
+                  라. 기타 부적절 하다고 판단되는 행위
+                  제3조 [회원정보 보안의 의무]
+                  1. 아이디와 비밀번호에 관한 모든 관리의 책임과 특히 이로 인한 진료예약, 건강검진예약 등의 개인 신상, 의료정보에 관한 누출의 책임은 회원에게 있습니다.
+                  2. 자신의 아이디가 부정하게 사용한 경우, 이용자는 반드시 병원에 그 사실을 통보해야 합니다.
+                  3. 병원은 개인의 신분 확인이 가능한 정보를 회원 혹은 사용자의 사전 허락없이 병원과 관계가 없는 제3자에게 팔거나 제공하지 않습니다. 그러나 병원은 자발적으로 제공된 회원 정보를 다음과 같은 경우에 활용할 수 있습니다.
+                  가. 회원들에게 유용한 새 기능, 정보, 서비스 개발에 필요한 정보를 개발자들에게 제공하는 경우
+                  나. 병원 홈페이지의 원활한 운영을 위해 통계분석 자료로 활용하는 경우
+                  다. 회원과 사용자 선호에 따른 광고 또는 서비스를 실시하기 위하여 병원에서 사용하고자 하는 경우
+                  4. 병원은 회원의 정보를 병원관련기관(노원을지대학병원, 대전을지대학교병원, 강남을지대학교병원, 의정부을지대학교병원, 을지대학교)간에 효율적인 서비스관리를 위하여 공유할 수 있습니다.
+                  5. 게시판에 개인 신분 확인이 가능한 정보(사용자 이름, e-mail 등)가 자발적으로 공개될 수 있습니다. 이런 경우 공개된 정보가 제3자에 의해 수집되고, 원하지 않는 메시지를 받을 수도 있습니다. 제3자의 그러한 행위는 병원이 통제할 수 없습니다. 따라서 병원은 병원이 통제할 수 없는 방법에 의한 회원 정보의 발견 가능성에 대해 아무런 보장을 하지 않습니다.
+                  6. 회원은 사이트 서비스의 사용 종료시마다 정확히 로그아웃(Log-out)해야 하며, 로그아웃하지 아니하여 제3자가 귀하에 관한 정보를 도용하는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 병원은 책임을 부담하지 아니합니다.
+                  제6장 분쟁조정
+                  1. 본 이용약관에 규정된 것을 제외하고 발생하는 서비스 이용에 관한 제반 문제에 관한 분쟁은 최대한 쌍방합의에 의해 해결하도록 합니다.
+                  2. 서비스 이용으로 발생한 분쟁에 대해 소송이 제기될 경우 병원의 소재지를 관할 하는 법원을 관할법원으로 합니다.
+                  부칙
+                  (시행일) 이 약관은 2012년 8월 2일부터 시행 합니다.</textarea>
+
+                  <div class="agree_wrap1">
+                    <input type="checkbox" name="terms_agree" id="terms_agree">
+                    <label for="terms_agree">동의합니다.</label>
+                  </div>
+              </fieldset>
+            </form>
+
+            <h4>을지병원 개인정보의 수집 및 수집방법</h4>
+            <form name="personal" id="personal">
+              <fieldset>
+                <legend class="hide">개인정보 수집</legend>
+                <textarea name="personal_txt" id="personal_txt" readonly>1. 개인정보의 수집 및 수집방법
+                  병원 서비스 이용을 위하여 필요한 최소한의 개인정보만을 수집합니다.
+                  
+                  필수 항목 : 성명, 아이디, 비밀번호, 연락처, e-mail, 주소
+                  협력의 가입시 : 의사구분, 병원명, 전문과, 면허번호, 병원전화, 병원주소 병원은 회원 가입시 홈페이지 회원가입을 이용한 방법으로만 개인정보를 수집합니다.
+                  2. 개인정보의 수집목적 및 이용목적
+                  홈페이지의 각종 서비스를 이용하는데 있어 인터넷 진료예약 등 각종 서비스의 원활한 제공과 소식지 및 공지사항 전달, 예약확인 등 각종 정보 제공을 위한 온라인 및 오프라인에서의 공지, 통계분석자료로 활용을 위해 최소한의 정보를 필수 사항으로 수집합니다.
+                  회원님이 제공하신 모든 정보는 상기 목적에 필요한 용도 이외로는 사용되지 않으며 수집 정보의 범위나 사용 목적, 용도가 변경될 시에는 반드시 회원님께 사전 동의를 구할 것입니다.
+                  
+                  3. 개인정보의 보유기간 및 이용기간
+                  병원은 수집된 고객의 개인정보를 회원가입 하신 후 해지(탈퇴신청 등) 시까지 보유합니다.
+                  
+                  </textarea>
+
+                  <div class="agree_wrap2">
+                    <input type="checkbox" name="personal_agree" id="personal_agree">
+                    <label for="personal_agree">동의합니다.</label>
+                  </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div class="personal_info_wrap">
+          <h3>정보입력</h3>
+          <p>회원가입 시 필요한 정보를 입력해 주십시오.<span>'*'는 필수 입력항목 입니다.</span></p>
+
+          <form name="u_info" id="u_info">
+            <fieldset>
+              <legend class="hide">회원정보</legend>
+              
+              <div class="u_name_wrap">
+                <label for="u_name">* 성명</label>
+                <input type="text" name="u_name" id="u_name">
+              </div>
+
+              <div class="u_id_wrap">
+                <label for="u_id">* 아이디</label>
+                <input type="text" name="u_id" id="u_id">
+                <button type="button" class="u_id_re">중복확인</button>
+              </div>
+
+              <div class="u_pwd_wrap">
+                <label for="u_pwd">* 비밀번호</label>
+                <input type="password" name="u_pwd" id="u_pwd">
+              </div>
+              
+              <div class="u_re_pwd_wrap">
+                <label for="u_re_pwd">* 비밀번호 확인</label>
+                <input type="password" name="u_re_pwd" id="u_re_pwd">
+              </div>
+
+              <div class="u_tel_wrap">
+                <label for="u_tel_second">* 휴대폰</label>
+                <input type="text" name="u_tel_first" id="u_tel_first" value="010" readonly>
+                <span>-</span>
+                <input type="text" name="u_tel_second" id="u_tel_second">
+                <span>-</span>
+                <input type="text" name="u_tel_last" id="u_tel_last">
+              </div>
+
+              <div class="u_email_wrap">
+                <label for="u_email">* 이메일</label>
+                <input type="email" name="u_email" id="u_email">
+                <input type="checkbox" name="u_email_agree" id="u_email_agree">
+                <label for="u_email_agree">이메일 수신동의</label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="join_btn_wrap">
+          <button type="submit" class="join">회원가입</button>
+          <button type="button" class="cancel">취소하기</button>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer_total">
+        <h2 class="hide">아래바로가기메뉴</h2>
+        <div class="footer_menu">
+          <a href="https://www.eulji.or.kr/footer/footer_pg01.jsp">응급센터 당직전문의 진료과</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg07.jsp">이용약관</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg02_test.jsp" class="policy">개인정보처리방침</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg03.jsp">윤리강령</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg04.jsp">환자의 권리와 의무</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg05.jsp">비금여수가</a>
+          <a href="https://www.eulji.or.kr/footer/footer_pg06.jsp">이메일무단수집거부</a>
+          <a href="https://gw.eulji.ac.kr/WebSite/Login.aspx?ReturnUrl=%2fWebSite%2f&isMobile=0">그룹웨어</a>
+        </div>
+
+        <div class="footer_add_family">
+          <div class="add">
+            <address>
+              [우 : 01830] 서울특별시 노원구 한글비석로 68 노원을지대학교병원
+            </address>
+            <p>
+              COPYRIGHT(C) NOWON EULJI MEDICAL CENTER, EULJI UNIVERSITY. ALL
+              RIGHTS RESERVED.
+            </p>
+          </div>
+
+          <div class="footer_sns_img_family">
+            <div class="footer_sns">
+              <a href="https://www.instagram.com/eulji_insta/" target="_blank">
+                <img src="../images/instagram.png" alt="insta" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCfoxBn16vNhDeOktAuya17Q" target="_blank">
+                <img src="../images/youtube.png" alt="youtube" />
+              </a>
+            </div>
+
+            <div class="footer_img">
+              <img src="../images/f_img.gif" alt="" />
+            </div>
+
+            <div class="footer_family">
+              <div class="family_txt">
+                <h2>FAMILY SITE 바로가기</h2> 
+                <p>⌃</p>
+              </div>
+              <ul class="family_cont">
+                <li><a href="https://www.eulji.net/" target="_blank">을지재단</a></li>
+                <li><a href="https://www.eulji.ac.kr/" target="_blank">을지대학교</a></li>
+                <li><a href="https://www.emc.ac.kr/" target="_blank">대전을지대학교병원</a></li>
+                <li><a href="https://www.emc.ac.kr/" target="_blank">강남을지대학교병원</a></li>
+                <li><a href="https://www.emc.ac.kr/" target="_blank">의정부 을지대학교병원</a></li>
+                <li><a href="https://www.euljiedu.net/" target="_blank">을지인력개발원</a></li>
+                <li><a href="https://www.bumsuk.or.kr/" target="_blank">범석학술장학재단</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

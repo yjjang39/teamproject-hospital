@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노원을지대학교병원::건강정보</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/hospitalmap.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../images/eulji_ai_favicon.png"/>
+    <link rel="apple-touch-icon" href="../images/eulji_ai_favicon.png"/>
+    
+    <script type="text/javascript" src="../js/normal.js"></script>
+
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=8jou175dp3"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="nav_bg"></div>
+        <div class="border_line"></div>
+        <div class="header_wrap">
+            <h1 class="logo">
+                <a href="index.html"><img src="../images/eulji_ai.png" alt="노원을지대학교병원"></a>
+            </h1>
+            
+            <nav class="gnb" id="gnb">
+                <h2 class="hide">주메뉴</h2>
+                <ul>
+                    <li><a href="reservation.html">예약안내</a>
+                        <ul class="two_depth">
+                            <li><a href="reservation.html">예약안내</a></li>
+                            <li><a href="visit.html">첫 방문고객 진료예약</a></li>
+                            <li><a href="faq.html">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="care.html">진료안내</a>
+                        <ul class="two_depth">
+                            <li><a href="care.html">진료과</a></li>
+                            <li><a href="care_specialty.html">전문진료센터</a></li>
+                            <li><a href="care_enter.html">진료안내</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="medicalessay.html">건강정보</a>
+                        <ul class="two_depth">
+                            <li><a href="medicalessay.html">메디컬 에세이</a></li>
+                            <li><a href="euljimagazine.html">을지소식</a></li>
+                            <li><a href="ereplit.html">E-리플릿</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="hospitalinfo.html">병원안내</a>
+                        <ul class="two_depth">
+                            <li><a href="https://www.emc.ac.kr/epub/index.html">을지60년사</a></li>
+                            <li><a href="https://www.eulji.or.kr/ePub/index.html">설립자 평전</a></li>
+                            <li><a href="hospitalinfo.html">병원소개</a></li>
+                            <li><a href="hospitalmap.html">찾아오시는 길</a></li>
+                            <li><a href="customersay.html">고객의 소리</a></li>
+                            <li><a href="recruitment.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="top_menu">
+            <h2 class="hide">서비스메뉴</h2>
+            <div class="center">
+                <ul>
+                    <li><a href="https://health.eulji.or.kr/"  target="_blank">건강증진센터</a></li>
+                    <li><a href="https://refer.eulji.or.kr/" target="_blank">진료협력센터</a></li>
+                </ul>
+            </div>
+
+            <div class="util_wrap">
+                <div class="util_menu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li class="language">
+                            <a href="#none">LANGUAGE</a>
+                            <ul class="lang_bg">
+                                <li><a href="#none">ENGLISH</a></li>
+                                <li><a href="#none">中國語</a></li>
+                                <li><a href="#none">日本語</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <form name="search_box" id="search_box">
+                        <fieldset>
+                            <legend class="hide">검색하기</legend>
+                            <label for="search_txt" class="hide">검색</label>
+                            <input type="text" name="search_txt" id="search_txt" placeholder="검색어를 입력하세요.">
+                        </fieldset>
+                    </form>
+                    <button type="submit" class="search_btn">검색</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <button type="button"><img src="../images/menu.png" alt="mobile_menu"></button> -->
+    </header>
+
+    <main id="main">
+        <div class="customersay_side_menu">
+            <h2>병원안내</h2>
+            <ul>
+                <li class="eulji60"><a href="https://www.emc.ac.kr/epub/index.html">을지60년사</a></li>
+                <li class="biography"><a href="https://www.eulji.or.kr/ePub/index.html">설립자 평전</a></li>
+                <li class="hospitalinfo"><a href="hospitalinfo.html">병원소개</a></li>
+                <li class="hospitalmap"><a href="hospitalmap.html">찾아오시는 길</a></li>
+                <li class="customersay"><a href="customersay.html">고객의 소리</a></li>
+                <li class="notice"><a href="recruitment.html">공지사항</a></li>
+            </ul>
+        </div>
+
+        <div class="customersay_wrap">
+            <h2>찾아오시는 길</h2>
+            <!-- 지도 -->
+            <div id="map" style="width:100%;height:400px;"></div>
+
+            <script>
+                var mapOptions = {
+                    center: new naver.maps.LatLng(37.636485, 127.069713),
+                    zoom: 17
+                };
+
+                var map = new naver.maps.Map('map', mapOptions);
+                var map = new naver.maps.Map('map', {
+                center: new naver.maps.LatLng(37.636485, 127.069713),
+                zoom: 17
+            });
+
+                var marker = new naver.maps.Marker({
+                position: new naver.maps.LatLng(37.6364852, 127.069713),
+                map: map});
+                // 클릭 이벤트 핸들러 추가
+                naver.maps.Event.addListener(map, 'click', function(e) {
+                    // 클릭한 위치의 좌표를 가져와서 링크에 추가
+                    var clickedLng = e.coord.x;
+                    var clickedLat = e.coord.y;
+                    var link = 'https://map.naver.com/p/entry/place/11797422?lng=' + clickedLng + '&lat=' + clickedLat + '&placePath=%2Fhome&searchType=place&c=15.00,0,0,0,dh';
+
+                    // 링크로 이동
+                    window.location.href = link;
+                });
+            </script>
+
+            <p>* 지도를 클릭하시면 상세 안내 페이지로 이동합니다.</p>
+
+            <div class="subway">
+                <h3>지하철로 가는 길</h3>
+                <ul>
+                    <li>지하철 7호선 : 하계역(을지대 을지병원) 3번 출구 (도보 3분 거리)</li>
+                </ul>
+            </div>  
+
+            <div class="bus">
+                <h3>버스로 가는 길</h3>
+                <ul>
+                    <li>하계미성아파트(을지병원) : 100, 172, 8110, 1135, 1141, 1144, 1224</li>
+                    <li>하계(세이브존 앞) : 105, 146, 8146, 1131, 1135, 1140, 1160, 1001</li>
+                    <li>한성여객종점 : 100, 172, 8110, 1135, 1141, 1144, 1224</li>
+                    <li>하계역(6번출구) : 105, 146, 1137, 1140, 1001</li>
+                </ul>
+            </div>
+
+            <div class="car">
+                <h3>자동차 오시는 길</h3>
+                <a href="https://map.naver.com/p/directions/-/14145360.514994117,4528199.060846125,%EC%9D%84%EC%A7%80%EB%B3%91%EC%9B%90,11797422,PLACE_POI/-/transit?c=15.00,0,0,0,dh" target="_blank">
+                    <span>자동차 오시는 길 찾기</span>
+                    <span>&gt;</span>
+                </a>
+            </div>
+
+            <div class="parking">
+                <h3>주차장 이용 안내</h3>
+                <img src="../images/parkingmap.png" alt="주차장 지도" width="600px">
+            </div>
+
+
+
+
+            <div class="manager_wrap">
+                <p class="manager">콘텐츠 담당자 : 원무팀 이 상</p>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer_total">
+          <h2 class="hide">아래바로가기메뉴</h2>
+          <div class="footer_menu">
+            <a href="https://www.eulji.or.kr/footer/footer_pg01.jsp">응급센터 당직전문의 진료과</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg07.jsp">이용약관</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg02_test.jsp" class="policy">개인정보처리방침</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg03.jsp">윤리강령</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg04.jsp">환자의 권리와 의무</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg05.jsp">비금여수가</a>
+            <a href="https://www.eulji.or.kr/footer/footer_pg06.jsp">이메일무단수집거부</a>
+            <a href="https://gw.eulji.ac.kr/WebSite/Login.aspx?ReturnUrl=%2fWebSite%2f&isMobile=0">그룹웨어</a>
+          </div>
+  
+          <div class="footer_add_family">
+            <div class="add">
+              <address>
+                [우 : 01830] 서울특별시 노원구 한글비석로 68 노원을지대학교병원
+              </address>
+              <p>
+                COPYRIGHT(C) NOWON EULJI MEDICAL CENTER, EULJI UNIVERSITY. ALL
+                RIGHTS RESERVED.
+              </p>
+            </div>
+  
+            <div class="footer_sns_img_family">
+              <div class="footer_sns">
+                <a href="https://www.instagram.com/eulji_insta/" target="_blank">
+                  <img src="../images/instagram.png" alt="insta" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCfoxBn16vNhDeOktAuya17Q" target="_blank">
+                  <img src="../images/youtube.png" alt="youtube" />
+                </a>
+              </div>
+  
+              <div class="footer_img">
+                <img src="../images/f_img.gif" alt="" />
+              </div>
+  
+              <div class="footer_family">
+                <div class="family_txt">
+                  <h2>FAMILY SITE 바로가기</h2> 
+                  <p>⌃</p>
+                </div>
+                <ul class="family_cont">
+                  <li><a href="https://www.eulji.net/" target="_blank">을지재단</a></li>
+                  <li><a href="https://www.eulji.ac.kr/" target="_blank">을지대학교</a></li>
+                  <li><a href="https://www.emc.ac.kr/" target="_blank">대전을지대학교병원</a></li>
+                  <li><a href="https://www.emc.ac.kr/" target="_blank">강남을지대학교병원</a></li>
+                  <li><a href="https://www.emc.ac.kr/" target="_blank">의정부 을지대학교병원</a></li>
+                  <li><a href="https://www.euljiedu.net/" target="_blank">을지인력개발원</a></li>
+                  <li><a href="https://www.bumsuk.or.kr/" target="_blank">범석학술장학재단</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
