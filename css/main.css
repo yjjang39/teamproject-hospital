@@ -167,7 +167,7 @@ main {
     font-weight: 500;
 }
 /* .main_image .main_image1 {
-  display: none;
+    display: none;
 } */
 .main_image .main_image2, .main_image .main_image3,.main_image .main_image4, .main_image .main_image5, .main_image .main_image6{
     display: none;
@@ -189,9 +189,10 @@ main {
 .numbers ul {
     display: flex;
     gap: 8px;
-    position: absolute;
+    /* position: absolute;
     left: 150px;
-    bottom: 40px;
+    bottom: 40px; */
+    display: none;
 }
 
 
