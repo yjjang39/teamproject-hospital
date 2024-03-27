@@ -2,15 +2,20 @@ window.onload = function () {
   let faq1 = document.querySelectorAll(".faq_1");
 
   for (var pq of faq1) {
-    pq.addEventListener("click", function () {
-      hideAll();
-      this.classList.add("active");
-    });
+      pq.addEventListener("click", function () {
+          if (this.classList.contains("active")) {
+              this.classList.remove("active");
+          } else {
+              hideAll();
+              this.classList.add("active");
+          }
+      });``
   }
+
   function hideAll() {
-    for (q of faq1) {
-      q.classList.remove("active");
-    }
+      for (q of faq1) {
+          q.classList.remove("active");
+      }
   }
   
 
@@ -41,84 +46,34 @@ window.onload = function () {
   //       document.querySelector(activeCont).style.display = "block";
   //     });
   //   }
+  const contents = [
+    document.querySelector(".question_inner"),
+    document.querySelector(".use_guide"),
+    document.querySelector('.care_guide'),
+    document.querySelector('.round_guide'),
+    document.querySelector('.etc_guide')
+];
 
-  const content = document.querySelector(".question_inner");
-  const content2 = document.querySelector(".use_guide");
-  const content3 = document.querySelector('.care_guide');
-  const content4 = document.querySelector('.round_guide');
-  const content5 = document.querySelector('.etc_guide');
-  const menu = document.querySelector(".list1");
-  const menu2 = document.querySelector(".list2");
-  const menu3 = document.querySelector('.list3');
-  const menu4 = document.querySelector('.list4');
-  const menu5 = document.querySelector('.list5');
+const menus = [
+    document.querySelector(".list1"),
+    document.querySelector(".list2"),
+    document.querySelector('.list3'),
+    document.querySelector('.list4'),
+    document.querySelector('.list5')
+];
 
-  menu.addEventListener("click", function () {
-    content.style.display = "block";
-    content2.style.display = "none";
-    content3.style.display = "none";
-    content4.style.display = "none";
-    content5.style.display = "none";
-
-    menu.classList.add('listactive');
-    menu2.classList.remove('listactive');
-    menu3.classList.remove('listactive');
-    menu4.classList.remove('listactive');
-    menu5.classList.remove('listactive');
-  });
-
-  menu2.addEventListener("click", function () {
-    content.style.display = "none";
-    content2.style.display = "block";
-    content3.style.display = "none";
-    content4.style.display = "none";
-    content5.style.display = "none";
-
-    menu.classList.remove('listactive');
-    menu2.classList.add('listactive');
-    menu3.classList.remove('listactive');
-    menu4.classList.remove('listactive');
-    menu5.classList.remove('listactive');
-  });
-  menu3.addEventListener("click", function () {
-    content.style.display = "none";
-    content2.style.display = "none";
-    content3.style.display = "block";
-    content4.style.display = "none";
-    content5.style.display = "none";
-
-    menu.classList.remove('listactive');
-    menu2.classList.remove('listactive');
-    menu3.classList.add('listactive');
-    menu4.classList.remove('listactive');
-    menu5.classList.remove('listactive');
-  });
-  menu4.addEventListener("click", function () {
-    content.style.display = "none";
-    content2.style.display = "none";
-    content3.style.display = "none";
-    content4.style.display = "block";
-    content5.style.display = "none";
-
-    menu.classList.remove('listactive');
-    menu2.classList.remove('listactive');
-    menu3.classList.remove('listactive');
-    menu4.classList.add('listactive');
-    menu5.classList.remove('listactive');
-  });
-  menu5.addEventListener("click", function () {
-    content.style.display = "none";
-    content2.style.display = "none";
-    content3.style.display = "none";
-    content4.style.display = "none";
-    content5.style.display = "block";
-
-    menu.classList.remove('listactive');
-    menu2.classList.remove('listactive');
-    menu3.classList.remove('listactive');
-    menu4.classList.remove('listactive');
-    menu5.classList.add('listactive');
-  });
-
+menus.forEach((menu, index) => {
+    menu.addEventListener("click", function () {
+        // 모든 content 숨기기
+        contents.forEach(content => content.style.display = "none");
+        // 클릭된 메뉴에 해당하는 content 보이기
+        contents[index].style.display = "block";
+        
+        // 모든 메뉴 초기화
+        menus.forEach(menu => menu.classList.remove('listactive'));
+        // 클릭된 메뉴에 클래스 추가
+        menu.classList.add('listactive');
+    });
+});
 
 };
