@@ -7,7 +7,7 @@ main {
 
 /* 메인이미지 */
 .main_image img {
-    width: 650px;
+    max-width: 650px;
 }
 .main_image_wrap {
     background: #aa845e;
@@ -33,22 +33,19 @@ main {
 
 
 
-
-
-
 .main_image {
-    width: 1200px;
+    width: 100%;
     position: relative;
     margin: 0 auto 80px;
     padding: 15px;
 }
 .main_image > ul > li {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .main_image > ul > li > div {
-    width: 400px;
+    max-width: 400px;
     text-align: center;
 }
 .main_image ul div p {
@@ -199,7 +196,7 @@ main {
 /* 바로가기 메뉴 */
 .shortcut_menu {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto 80px;
     flex-wrap: wrap;
     justify-content: center;
@@ -416,7 +413,7 @@ main {
 }
 
 .medical_center {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .medical_center h2 {
@@ -432,14 +429,15 @@ main {
 }
 .medical_center ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
 }
 .medical_center img {
     width: 100px;
     margin-bottom: 10px;
 }
 .medical_center ul li {
-    width: 270px;
+    max-width: 270px;
     height: 270px;
     display: flex;
     justify-content: center;
@@ -477,3 +475,28 @@ main {
 }
 
 
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .medical_center ul {
+        flex-wrap: wrap;
+    }
+    .medical_center img {
+        width: 80px;
+    }
+    .medical_center ul li {
+        max-width: 200px;
+        height: 200px;
+    }
+    .medical_center ul p {
+        font-size: 15px;
+    }
+    .main_image img {
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 767px) {
+    
+}

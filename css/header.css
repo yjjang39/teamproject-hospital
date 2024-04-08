@@ -3,10 +3,9 @@
     background: linear-gradient(to right, #93bcda 30%, #d5e6ed 70%);
 }
 .top_banner {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    
 }
 .top_banner img {
     height: 100px;
@@ -32,6 +31,7 @@ header {
     height: 100px;
     position: relative;
     z-index: 3;
+    padding: 0 20px;
 }
 /* header:hover .nav_bg {
     display: block;
@@ -40,7 +40,7 @@ header {
     display: block;
 }  */
 .header_wrap {
-    width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .logo img {
@@ -52,14 +52,15 @@ header {
 
 /* GNB */
 .gnb {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .border_line {
-    width: 100%;
+    width: calc(100% - 40px);
     border-bottom: 1px solid #05a8ab;
     position: absolute;
     top: 100px;
+    left: 20px;
 }
 .nav_bg {
     width: 100%;
@@ -96,7 +97,7 @@ header {
 
 /* 탑메뉴 */
 .top_menu {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -163,4 +164,41 @@ header {
     position: absolute;
     top: 2px;
     right: 2px;
+}
+
+
+
+
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+    .top_banner img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
+    .top_banner_wrap {
+        max-width: 100%;
+    }
+    .top_banner {
+        max-width: 100%;
+    }
+
+    .logo img {
+        display: block;
+    }
+    .gnb > ul {
+        justify-content: center;
+
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+    .top_banner_btn button {
+        font-size: 10px;
+    }
+    .top_banner_btn span {
+        height: 8px;
+    }
 }
